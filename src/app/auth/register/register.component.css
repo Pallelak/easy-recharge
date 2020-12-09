@@ -1,0 +1,77 @@
+section{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  transform: translate(-50%, -50%);
+}
+
+section input[type = text],
+section input[type = password],
+section input[type = submit],
+section input[type = email] {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section input[type = text],
+section input[type = password],
+section input[type = email]{
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+section input[type = text]:focus,
+section input[type = password]:focus,
+section input[type = email]:focus {
+  outline: none;
+}
+section input[type = submit] {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.r-btn{
+  width: 100%;
+  text-align: center;
+}
+
+/*button{*/
+/*  padding: 8px;*/
+/*  width: 50%;*/
+/*  cursor: pointer;*/
+/*}*/
+
+.form-container{
+  height: 370px;
+}
+
+.radio-btn{
+  padding: 10px;
+  text-align: center;
+  color: rgba(0,0,0,0.7);
+}
+
+input[type=submit]{
+  border: none;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+  color: #555;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.2s;
+  min-width: 50px;
+  border-radius: 4px;
+  margin-right: 60px;
+  margin-top: 10px;
+  padding: 8px;
+  width: 50%;
+}
+
+input[type=submit]:hover{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 1);
+  transform: translateY(-5%);
+}

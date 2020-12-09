@@ -1,0 +1,17 @@
+<section>
+  <div class="form-container">
+    <form [formGroup]="regForm" (ngSubmit)="onSubmit()">
+      <input formControlName="username" type="text" name="username" placeholder="username" autocomplete="off">
+      <input formControlName="mobile" type="text" name="mobile" placeholder="mobile number" autocomplete="off">
+      <input formControlName="email" type="email" name="email" placeholder="email" autocomplete="off">
+      <input formControlName="password" type="password" name="password" placeholder="password" autocomplete="off">
+      <input formControlName="cPass" type="password" name="c-password" placeholder="confirm password" autocomplete="off">
+      <div class="radio-btn">
+        <input formControlName="role" type="radio" value='admin'> admin
+        <input formControlName="role" type="radio" value='user'checked>user
+      </div>
+      <input type="submit" value="register">
+    </form>
+  </div>
+</section>
+

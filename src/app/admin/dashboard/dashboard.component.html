@@ -1,0 +1,39 @@
+<app-header></app-header>
+<section class="row">
+  <div class="details-container">
+    <div class="head-container">
+      <h4 [class.active]="showVisitor" (click)="onClickV()">Visitor Details</h4>
+      <h4 [class.active]="!showVisitor" (click)="onClickR()">Recharge Details</h4>
+    </div>
+    <div>
+      <div *ngIf="showVisitor">
+        <table>
+          <tr>
+            <th>username</th>
+            <th>email</th>
+            <th>mobile number</th>
+          </tr>
+          <tr *ngFor="let visitor of visitorsDetails">
+            <td>{{visitor.userName}}</td>
+            <td>{{visitor.email}}</td>
+            <td>{{visitor.mobileNumber}}</td>
+          </tr>
+        </table>
+      </div>
+
+      <div *ngIf="!showVisitor">
+        <table>
+          <tr>
+            <th>mobile number</th>
+            <th>amount recharged</th>
+          </tr>
+          <tr *ngFor="let rDetails of rechargeDetails">
+            <td>{{rDetails.mobileNumber}}</td>
+            <td>{{rDetails.amt}}</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</section>

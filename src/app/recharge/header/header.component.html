@@ -1,0 +1,9 @@
+<section>
+  <nav class="row row-align">
+    <h1><a [routerLink]="['/recharge']">Easy Recharge</a> <span *ngIf="userService.isAdmin()"> |&nbsp;</span></h1>
+    <h2><a [routerLink]="['/admin']" *ngIf="userService.isAdmin()">Admin Dashboard</a> </h2>
+  </nav>
+  <div>
+    <button (click)="logout()">Sign Off</button>
+  </div>
+</section>

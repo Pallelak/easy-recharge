@@ -1,0 +1,77 @@
+<section class="row">
+  <div class="main-container">
+
+    <div class="article">
+      <div class="test">
+        <div class="sidebar">
+          <h2>Prepaid Recharge</h2>
+        </div>
+        <div class="form-container">
+          <form [formGroup]="formgroup" (ngSubmit)="onSubmit()">
+            <div>
+              <input formControlName="mobileNumber" name="mobile-number" id="mb-number" type="text" placeholder="mobile number" autocomplete="off" [value]="mobileNUmber">
+            </div>
+
+            <div>
+              <input formControlName="amt" name="amount" id="amt" type="number" placeholder="amount" autocomplete="off">
+            </div>
+
+            <div><input type="submit" value="submit"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="r-pack">
+        <div>
+<!--          <p>Choose From Our</p>-->
+          <h2>Recommended Packs</h2>
+        </div>
+        <table>
+          <tr *ngFor="let rp of recommendedPacks">
+            <td>
+              <div>GBP {{rp.price}}</div>
+              <div>{{rp.packName}}</div>
+            </td>
+            <td>
+              <div>{{rp.dataLimit}} GB</div>
+              <div>data</div>
+            </td>
+            <td>
+              <div>{{rp.validity}} days</div>
+              <div>validity</div>
+            </td>
+            <td><button (click)="onClickButton(rp.price)">{{rp.price}}</button></td>
+          </tr>
+        </table>
+      </div>
+
+      <hr>
+      <div class="b-pack">
+
+        <div>
+          <h2>Browse Packs</h2>
+        </div>
+        <table>
+          <tr *ngFor="let bp of browsePack">
+            <td>
+              <div>GBP {{bp.price}}</div>
+              <div>{{bp.packName}}</div>
+            </td>
+            <td>
+              <div>{{bp.dataLimit}} GB</div>
+              <div>data</div>
+            </td>
+            <td>
+              <div>{{bp.validity}} days</div>
+              <div>validity</div>
+            </td>
+            <td><button (click)="onClickButton(bp.price)">{{bp.price}}</button></td>
+          </tr>
+
+
+        </table>
+      </div>
+
+    </div>
+  </div>
+</section>

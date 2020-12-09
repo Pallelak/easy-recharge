@@ -1,0 +1,36 @@
+.row{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.header-main{
+  flex-grow: 1;
+}
+
+section{
+  /*background:  #f5f6fa;*/
+  background: #fff;
+  width: 100vw;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 28px;
+  color: rgba(228, 0, 0, 0.75);
+}
+
+button{
+  padding: 5px;
+  width: 100px;
+  text-transform: capitalize;
+  cursor: pointer;
+}

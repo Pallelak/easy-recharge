@@ -1,0 +1,49 @@
+section{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  transform: translate(-50%, -50%);
+}
+
+section input[type = text],
+section input[type = password],
+section input[type = submit] {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section input[type = text],
+section input[type = password]{
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+section input[type = text]:focus,
+section input[type = password]:focus {
+  outline: none;
+}
+section input[type = submit] {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.r-btn{
+  width: 100%;
+  text-align: center;
+}
+
+button{
+  padding: 8px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.form-container{
+  width: 600px;
+}
+

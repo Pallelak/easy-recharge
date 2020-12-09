@@ -1,0 +1,13 @@
+<section>
+  <div class="form-container">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input formControlName="username" type="text" name="username" placeholder="username" autocomplete="off">
+      <input formControlName="password" type="password" name="password" placeholder="password" autocomplete="off">
+      <input type="submit" value="login">
+    </form>
+  </div>
+  <hr>
+  <div class="r-btn">
+    <button [routerLink]="['../register']">register</button>
+  </div>
+</section>
